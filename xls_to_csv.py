@@ -3,7 +3,7 @@ import pandas
 import os
 import glob
 
-from utils import remove_duplicates, process
+from utils import remove_duplicates, clean
 
 os.chdir("./xls")
 
@@ -26,9 +26,9 @@ for file_name in file_names:
             element = elements[i]
             raw = element.text.strip()
             
-            clean = clean(raw, i)
+            clean_string = clean(raw, i)
 
-            row_content.append(clean)
+            row_content.append(clean_string)
         
         if not all('' == s or s.isspace() for s in row_content):
             content.append(row_content)     
