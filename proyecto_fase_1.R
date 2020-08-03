@@ -1,0 +1,1 @@
+data_completo <- read.csv("./csv/completo.csv", na.strings=c("", " ","NA"), stringsAsFactors = FALSE)
