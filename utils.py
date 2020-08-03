@@ -20,7 +20,7 @@ def clean(string, column=0):
     return processed
 
 def remove_duplicates(content):
-    to_check = [3,4]
+    to_check = [3,4,14]
     to_pop = []
     for i in range(len(content) - 1):
         for j in range(i+1, len(content)):
